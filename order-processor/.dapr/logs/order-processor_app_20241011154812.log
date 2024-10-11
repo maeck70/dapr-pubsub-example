@@ -1,0 +1,33 @@
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 49 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 50 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 51 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 52 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 53 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 54 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 55 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 56 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 57 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+== APP - order-processor == text/plain
+== APP - order-processor == Raw Data: [34 123 92 34 111 114 100 101 114 73 100 92 34 58 49 48 125 34]
+== APP - order-processor == Error unmarshaling JSON data: json: cannot unmarshal string into Go value of type main.Order_t
+
+termination signal received: shutting down
+== APP - order-processor == signal: interrupt

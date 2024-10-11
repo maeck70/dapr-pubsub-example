@@ -1,0 +1,61 @@
+Starting Dapr with id checkout-sdk. HTTP Port: 41945. gRPC Port: 42549
+Checking if Dapr sidecar is listening on HTTP port 41945
+Flag --dapr-http-max-request-size has been deprecated, use '--max-body-size 4Mi'
+Flag --dapr-http-read-buffer-size has been deprecated, use '--read-buffer-size 4Ki'
+time="2024-10-11T16:12:09.549911281-07:00" level=info msg="Starting Dapr Runtime -- version 1.14.4 -- commit 583960dc90120616124b60ad2b7820fc0b3edf44" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.549949186-07:00" level=info msg="Log level set to: info" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.550740177-07:00" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.security type=log ver=1.14.4
+time="2024-10-11T16:12:09.55171029-07:00" level=info msg="metric spec: {0x400069e1d9 <nil> <nil> []}" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.diagnostics type=log ver=1.14.4
+time="2024-10-11T16:12:09.551808502-07:00" level=info msg="Using default latency distribution buckets: [1 2 3 4 5 6 8 10 13 16 20 25 30 40 50 65 80 100 130 160 200 250 300 400 500 650 800 1000 2000 5000 10000 20000 50000 100000]" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.diagnostics type=log ver=1.14.4
+time="2024-10-11T16:12:09.552116837-07:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.diagnostics type=log ver=1.14.4
+time="2024-10-11T16:12:09.5535142-07:00" level=info msg="standalone mode configured" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.553636914-07:00" level=info msg="app id: checkout-sdk" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.553736426-07:00" level=info msg="Dapr trace sampler initialized: ParentBased{root:AlwaysOnSampler,remoteParentSampled:AlwaysOnSampler,remoteParentNotSampled:AlwaysOffSampler,localParentSampled:AlwaysOnSampler,localParentNotSampled:AlwaysOffSampler}" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.553790732-07:00" level=info msg="metrics server started on :35485/" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.554528518-07:00" level=info msg="local service entry announced: checkout-sdk -> 192.168.242.25:43655" app_id=checkout-sdk component="nr (mdns/v1)" instance=marcel-arm64 scope=dapr.contrib type=log ver=1.14.4
+time="2024-10-11T16:12:09.554555721-07:00" level=info msg="Initialized name resolution to mdns" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.554703338-07:00" level=info msg="Loading components…" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.555612744-07:00" level=info msg="Waiting for all outstanding components to be processed…" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.559067845-07:00" level=info msg="Component loaded: orderpubsub (pubsub.redis/v1)" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.processor type=log ver=1.14.4
+time="2024-10-11T16:12:09.559136253-07:00" level=info msg="All outstanding components processed" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.559159456-07:00" level=info msg="Loading endpoints…" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.559370481-07:00" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.55945539-07:00" level=info msg="All outstanding http endpoints processed" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.559484794-07:00" level=info msg="Loading Declarative Subscriptions…" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.559812932-07:00" level=warning msg="App channel is not initialized. Did you configure an app-port?" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.channels type=log ver=1.14.4
+time="2024-10-11T16:12:09.559920745-07:00" level=info msg="gRPC server listening on TCP address: :42549" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.grpc.api type=log ver=1.14.4
+time="2024-10-11T16:12:09.559936146-07:00" level=info msg="Enabled gRPC tracing middleware" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.grpc.api type=log ver=1.14.4
+time="2024-10-11T16:12:09.559944747-07:00" level=info msg="Enabled gRPC metrics middleware" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.grpc.api type=log ver=1.14.4
+time="2024-10-11T16:12:09.56013977-07:00" level=info msg="Registering workflow engine for gRPC endpoint: [::]:42549" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.grpc.api type=log ver=1.14.4
+time="2024-10-11T16:12:09.560295788-07:00" level=info msg="API gRPC server is running on port 42549" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.560332192-07:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:12:09.5603978-07:00" level=info msg="Enabled max body size HTTP middleware with size 4194304 bytes" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:12:09.560410801-07:00" level=info msg="Enabled tracing HTTP middleware" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:12:09.560420103-07:00" level=info msg="Enabled metrics HTTP middleware" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:12:09.560965666-07:00" level=info msg="HTTP server listening on TCP address: :41945" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:12:09.56108278-07:00" level=info msg="HTTP server is running on port 41945" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.561092981-07:00" level=info msg="The request body size parameter is: 4194304 bytes" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.561117984-07:00" level=info msg="gRPC server listening on TCP address: :43655" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.grpc.internal type=log ver=1.14.4
+time="2024-10-11T16:12:09.561130685-07:00" level=info msg="Enabled gRPC tracing middleware" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.grpc.internal type=log ver=1.14.4
+time="2024-10-11T16:12:09.561138786-07:00" level=info msg="Enabled gRPC metrics middleware" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.grpc.internal type=log ver=1.14.4
+time="2024-10-11T16:12:09.561183791-07:00" level=info msg="Internal gRPC server is running on :43655" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.561328008-07:00" level=info msg="actors: state store is not configured - this is okay for clients but services with hosted actors will fail to initialize!" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.561375714-07:00" level=info msg="Configuring actors placement provider 'placement'. Configuration: 'placement:localhost:50005'" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.actor type=log ver=1.14.4
+time="2024-10-11T16:12:09.561452823-07:00" level=info msg="Configuring actor reminders provider 'default'. Configuration: ''" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.actor type=log ver=1.14.4
+time="2024-10-11T16:12:09.561530732-07:00" level=info msg="Actor runtime started. Idle timeout: 1h0m0s" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.actor type=log ver=1.14.4
+time="2024-10-11T16:12:09.561551434-07:00" level=info msg="Configuring workflow engine with actors backend" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.561561835-07:00" level=info msg="Registering component for dapr workflow engine..." app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.561579837-07:00" level=info msg="Initializing Dapr workflow component" app_id=checkout-sdk component="dapr (workflow.dapr/v1)" instance=marcel-arm64 scope=dapr.contrib type=log ver=1.14.4
+time="2024-10-11T16:12:09.561597139-07:00" level=info msg="Workflow engine initialized." app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.561610441-07:00" level=info msg="dapr initialized. Status: Running. Init Elapsed 8ms" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:12:09.711571814-07:00" level=info msg="Placement tables updated, version: 0" app_id=checkout-sdk instance=marcel-arm64 scope=dapr.runtime.actors.placement type=log ver=1.14.4
+Checking if Dapr sidecar is listening on GRPC port 42549
+Dapr sidecar is up and running.
+Updating metadata for cliPID: 75322
+Updating metadata for app command: go run .
+Updating metadata for appPID: 75528
+You're up and running! Dapr logs will appear here.
+
+
+termination signal received: shutting down
+Exited Dapr successfully

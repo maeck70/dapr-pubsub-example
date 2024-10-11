@@ -1,0 +1,14 @@
+== APP - checkout-sdk == dapr client initializing for: 127.0.0.1:46079
+== APP - checkout-sdk == Published data: {"orderId":1}
+== APP - checkout-sdk == Published data: {"orderId":2}
+== APP - checkout-sdk == Published data: {"orderId":3}
+== APP - checkout-sdk == Published data: {"orderId":4}
+== APP - checkout-sdk == Published data: {"orderId":5}
+== APP - checkout-sdk == Published data: {"orderId":6}
+== APP - checkout-sdk == Published data: {"orderId":7}
+== APP - checkout-sdk == Published data: {"orderId":8}
+== APP - checkout-sdk == Published data: {"orderId":9}
+== APP - checkout-sdk == Published data: {"orderId":10}
+Exited App successfully
+
+termination signal received: shutting down

@@ -1,0 +1,52 @@
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":1}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:1]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":2}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:2]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":3}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:3]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":4}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:4]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":5}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:5]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":6}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:6]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":7}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:7]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":8}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:8]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":9}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:9]
+== APP - order-processor == application/json
+== APP - order-processor == data: {"descr":"100 Led Bulbs","orderId":10}
+== APP - order-processor == OrderId: 0
+== APP - order-processor == Descr: 
+== APP - order-processor == Subscriber received: map[descr:100 Led Bulbs orderId:10]
+
+termination signal received: shutting down

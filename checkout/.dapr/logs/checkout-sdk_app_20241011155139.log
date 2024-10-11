@@ -1,0 +1,14 @@
+== APP - checkout-sdk == dapr client initializing for: 127.0.0.1:44719
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 49 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 50 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 51 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 52 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 53 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 54 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 55 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 56 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 57 125]
+== APP - checkout-sdk == Published data: [123 34 111 114 100 101 114 73 100 34 58 49 48 125]
+Exited App successfully
+
+termination signal received: shutting down

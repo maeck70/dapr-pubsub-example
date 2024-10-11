@@ -1,0 +1,226 @@
+== APP - order-processor == 2024/10/11 15:25:09 http: panic serving 127.0.0.1:45798: interface conversion: interface {} is map[string]interface {}, not main.Order_t
+== APP - order-processor == goroutine 22 [running]:
+== APP - order-processor == net/http.(*conn).serve.func1()
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:1903 +0xb0
+== APP - order-processor == panic({0x56a900?, 0x4000280270?})
+== APP - order-processor == 	/usr/lib/golang/src/runtime/panic.go:770 +0x124
+== APP - order-processor == main.eventHandler({0x400029c000?, 0xc8?}, 0x61e0c2?)
+== APP - order-processor == 	/home/marcel/dapr-examples/quickstarts/pub_sub/go/sdk/order-processor/app.go:46 +0xf4
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.func1({0x6f7a80, 0x400029c000}, 0x4000282120)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/topic.go:303 +0x3c0
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0xff6c650bc598?, {0x6f7a80?, 0x400029c000?}, 0x9dd7d168d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.optionsHandler.func2({0x6f7a80?, 0x400029c000?}, 0x61a1bb?)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/service.go:105 +0x88
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x40002a0000?, {0x6f7a80?, 0x400029c000?}, 0x4000284005?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).routeHTTP(0x4000112840, {0x6f7a80, 0x400029c000}, 0x4000282120)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:459 +0x288
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x6f8820?, {0x6f7a80?, 0x400029c000?}, 0xac7280?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0x4000112840, {0x6f7a80, 0x400029c000}, 0x4000282000)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:90 +0x280
+== APP - order-processor == net/http.serverHandler.ServeHTTP({0x6f61c8?}, {0x6f7a80?, 0x400029c000?}, 0x6?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3142 +0xbc
+== APP - order-processor == net/http.(*conn).serve(0x40001c8fc0, {0x6f87e8, 0x40001c3890})
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2044 +0x508
+== APP - order-processor == created by net/http.(*Server).Serve in goroutine 1
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3290 +0x3f0
+== APP - order-processor == 2024/10/11 15:25:10 http: panic serving 127.0.0.1:45802: interface conversion: interface {} is map[string]interface {}, not main.Order_t
+== APP - order-processor == goroutine 35 [running]:
+== APP - order-processor == net/http.(*conn).serve.func1()
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:1903 +0xb0
+== APP - order-processor == panic({0x56a900?, 0x40002804e0?})
+== APP - order-processor == 	/usr/lib/golang/src/runtime/panic.go:770 +0x124
+== APP - order-processor == main.eventHandler({0x400029c0e0?, 0xc8?}, 0x61e0c2?)
+== APP - order-processor == 	/home/marcel/dapr-examples/quickstarts/pub_sub/go/sdk/order-processor/app.go:46 +0xf4
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.func1({0x6f7a80, 0x400029c0e0}, 0x40002825a0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/topic.go:303 +0x3c0
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0xff6c650bc598?, {0x6f7a80?, 0x400029c0e0?}, 0x9dd7d168d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.optionsHandler.func2({0x6f7a80?, 0x400029c0e0?}, 0x61a1bb?)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/service.go:105 +0x88
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x40002a00f0?, {0x6f7a80?, 0x400029c0e0?}, 0x40002840dd?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).routeHTTP(0x4000112840, {0x6f7a80, 0x400029c0e0}, 0x40002825a0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:459 +0x288
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x6f8820?, {0x6f7a80?, 0x400029c0e0?}, 0xac7280?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0x4000112840, {0x6f7a80, 0x400029c0e0}, 0x4000282480)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:90 +0x280
+== APP - order-processor == net/http.serverHandler.ServeHTTP({0x6f61c8?}, {0x6f7a80?, 0x400029c0e0?}, 0x6?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3142 +0xbc
+== APP - order-processor == net/http.(*conn).serve(0x4000286360, {0x6f87e8, 0x40001c3890})
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2044 +0x508
+== APP - order-processor == created by net/http.(*Server).Serve in goroutine 1
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3290 +0x3f0
+== APP - order-processor == 2024/10/11 15:25:11 http: panic serving 127.0.0.1:45814: interface conversion: interface {} is map[string]interface {}, not main.Order_t
+== APP - order-processor == goroutine 5 [running]:
+== APP - order-processor == net/http.(*conn).serve.func1()
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:1903 +0xb0
+== APP - order-processor == panic({0x56a900?, 0x40002806c0?})
+== APP - order-processor == 	/usr/lib/golang/src/runtime/panic.go:770 +0x124
+== APP - order-processor == main.eventHandler({0x400029c1c0?, 0xc8?}, 0x61e0c2?)
+== APP - order-processor == 	/home/marcel/dapr-examples/quickstarts/pub_sub/go/sdk/order-processor/app.go:46 +0xf4
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.func1({0x6f7a80, 0x400029c1c0}, 0x40002827e0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/topic.go:303 +0x3c0
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0xff6c650bc598?, {0x6f7a80?, 0x400029c1c0?}, 0x9dd7d168d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.optionsHandler.func2({0x6f7a80?, 0x400029c1c0?}, 0x61a1bb?)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/service.go:105 +0x88
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x40002a01e0?, {0x6f7a80?, 0x400029c1c0?}, 0x4000284155?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).routeHTTP(0x4000112840, {0x6f7a80, 0x400029c1c0}, 0x40002827e0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:459 +0x288
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x6f8820?, {0x6f7a80?, 0x400029c1c0?}, 0xac7280?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0x4000112840, {0x6f7a80, 0x400029c1c0}, 0x4000000d80)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:90 +0x280
+== APP - order-processor == net/http.serverHandler.ServeHTTP({0x6f61c8?}, {0x6f7a80?, 0x400029c1c0?}, 0x6?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3142 +0xbc
+== APP - order-processor == net/http.(*conn).serve(0x40000a2630, {0x6f87e8, 0x40001c3890})
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2044 +0x508
+== APP - order-processor == created by net/http.(*Server).Serve in goroutine 1
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3290 +0x3f0
+== APP - order-processor == 2024/10/11 15:25:12 http: panic serving 127.0.0.1:45818: interface conversion: interface {} is map[string]interface {}, not main.Order_t
+== APP - order-processor == goroutine 6 [running]:
+== APP - order-processor == net/http.(*conn).serve.func1()
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:1903 +0xb0
+== APP - order-processor == panic({0x56a900?, 0x40000a69c0?})
+== APP - order-processor == 	/usr/lib/golang/src/runtime/panic.go:770 +0x124
+== APP - order-processor == main.eventHandler({0x40000b41c0?, 0xc8?}, 0x61e0c2?)
+== APP - order-processor == 	/home/marcel/dapr-examples/quickstarts/pub_sub/go/sdk/order-processor/app.go:46 +0xf4
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.func1({0x6f7a80, 0x40000b41c0}, 0x4000000fc0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/topic.go:303 +0x3c0
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0xff6cad37bae8?, {0x6f7a80?, 0x40000b41c0?}, 0x9dd7d168d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.optionsHandler.func2({0x6f7a80?, 0x40000b41c0?}, 0x4000156680?)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/service.go:105 +0x88
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x40000bc000?, {0x6f7a80?, 0x40000b41c0?}, 0x40000362d5?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).routeHTTP(0x4000112840, {0x6f7a80, 0x40000b41c0}, 0x4000000fc0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:459 +0x288
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x6f8820?, {0x6f7a80?, 0x40000b41c0?}, 0xac7280?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0x4000112840, {0x6f7a80, 0x40000b41c0}, 0x4000000ea0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:90 +0x280
+== APP - order-processor == net/http.serverHandler.ServeHTTP({0x6f61c8?}, {0x6f7a80?, 0x40000b41c0?}, 0x6?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3142 +0xbc
+== APP - order-processor == net/http.(*conn).serve(0x40000a26c0, {0x6f87e8, 0x40001c3890})
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2044 +0x508
+== APP - order-processor == created by net/http.(*Server).Serve in goroutine 1
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3290 +0x3f0
+== APP - order-processor == 2024/10/11 15:25:13 http: panic serving 127.0.0.1:53650: interface conversion: interface {} is map[string]interface {}, not main.Order_t
+== APP - order-processor == goroutine 8 [running]:
+== APP - order-processor == net/http.(*conn).serve.func1()
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:1903 +0xb0
+== APP - order-processor == panic({0x56a900?, 0x40001c3c20?})
+== APP - order-processor == 	/usr/lib/golang/src/runtime/panic.go:770 +0x124
+== APP - order-processor == main.eventHandler({0x400015ea80?, 0xc8?}, 0x61e0c2?)
+== APP - order-processor == 	/home/marcel/dapr-examples/quickstarts/pub_sub/go/sdk/order-processor/app.go:46 +0xf4
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.func1({0x6f7a80, 0x400015ea80}, 0x400018d440)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/topic.go:303 +0x3c0
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0xff6c650b9cf8?, {0x6f7a80?, 0x400015ea80?}, 0x9dd7d168d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.optionsHandler.func2({0x6f7a80?, 0x400015ea80?}, 0x61a1bb?)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/service.go:105 +0x88
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x40001900f0?, {0x6f7a80?, 0x400015ea80?}, 0x400014a64d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).routeHTTP(0x4000112840, {0x6f7a80, 0x400015ea80}, 0x400018d440)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:459 +0x288
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x6f8820?, {0x6f7a80?, 0x400015ea80?}, 0xac7280?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0x4000112840, {0x6f7a80, 0x400015ea80}, 0x4000001200)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:90 +0x280
+== APP - order-processor == net/http.serverHandler.ServeHTTP({0x6f61c8?}, {0x6f7a80?, 0x400015ea80?}, 0x6?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3142 +0xbc
+== APP - order-processor == net/http.(*conn).serve(0x40000a2a20, {0x6f87e8, 0x40001c3890})
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2044 +0x508
+== APP - order-processor == created by net/http.(*Server).Serve in goroutine 1
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3290 +0x3f0
+== APP - order-processor == 2024/10/11 15:25:14 http: panic serving 127.0.0.1:53656: interface conversion: interface {} is map[string]interface {}, not main.Order_t
+== APP - order-processor == goroutine 9 [running]:
+== APP - order-processor == net/http.(*conn).serve.func1()
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:1903 +0xb0
+== APP - order-processor == panic({0x56a900?, 0x40000a6d20?})
+== APP - order-processor == 	/usr/lib/golang/src/runtime/panic.go:770 +0x124
+== APP - order-processor == main.eventHandler({0x40000b42a0?, 0xc8?}, 0x61e0c2?)
+== APP - order-processor == 	/home/marcel/dapr-examples/quickstarts/pub_sub/go/sdk/order-processor/app.go:46 +0xf4
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.func1({0x6f7a80, 0x40000b42a0}, 0x4000001440)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/topic.go:303 +0x3c0
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0xff6cad37bae8?, {0x6f7a80?, 0x40000b42a0?}, 0x9dd7d168d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.optionsHandler.func2({0x6f7a80?, 0x40000b42a0?}, 0x61a1bb?)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/service.go:105 +0x88
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x40000bc0f0?, {0x6f7a80?, 0x40000b42a0?}, 0x4000036365?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).routeHTTP(0x4000112840, {0x6f7a80, 0x40000b42a0}, 0x4000001440)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:459 +0x288
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x6f8820?, {0x6f7a80?, 0x40000b42a0?}, 0xac7280?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0x4000112840, {0x6f7a80, 0x40000b42a0}, 0x4000001320)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:90 +0x280
+== APP - order-processor == net/http.serverHandler.ServeHTTP({0x6f61c8?}, {0x6f7a80?, 0x40000b42a0?}, 0x6?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3142 +0xbc
+== APP - order-processor == net/http.(*conn).serve(0x40000a2ab0, {0x6f87e8, 0x40001c3890})
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2044 +0x508
+== APP - order-processor == created by net/http.(*Server).Serve in goroutine 1
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3290 +0x3f0
+== APP - order-processor == 2024/10/11 15:25:15 http: panic serving 127.0.0.1:53670: interface conversion: interface {} is map[string]interface {}, not main.Order_t
+== APP - order-processor == goroutine 38 [running]:
+== APP - order-processor == net/http.(*conn).serve.func1()
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:1903 +0xb0
+== APP - order-processor == panic({0x56a900?, 0x40000a6f00?})
+== APP - order-processor == 	/usr/lib/golang/src/runtime/panic.go:770 +0x124
+== APP - order-processor == main.eventHandler({0x40000b4380?, 0xc8?}, 0x61e0c2?)
+== APP - order-processor == 	/home/marcel/dapr-examples/quickstarts/pub_sub/go/sdk/order-processor/app.go:46 +0xf4
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.func1({0x6f7a80, 0x40000b4380}, 0x4000001680)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/topic.go:303 +0x3c0
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0xff6cad37bae8?, {0x6f7a80?, 0x40000b4380?}, 0x9dd7d168d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.optionsHandler.func2({0x6f7a80?, 0x40000b4380?}, 0x61a1bb?)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/service.go:105 +0x88
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x40000bc1e0?, {0x6f7a80?, 0x40000b4380?}, 0x40000363dd?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).routeHTTP(0x4000112840, {0x6f7a80, 0x40000b4380}, 0x4000001680)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:459 +0x288
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x6f8820?, {0x6f7a80?, 0x40000b4380?}, 0xac7280?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0x4000112840, {0x6f7a80, 0x40000b4380}, 0x4000282a20)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:90 +0x280
+== APP - order-processor == net/http.serverHandler.ServeHTTP({0x6f61c8?}, {0x6f7a80?, 0x40000b4380?}, 0x6?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3142 +0xbc
+== APP - order-processor == net/http.(*conn).serve(0x4000286990, {0x6f87e8, 0x40001c3890})
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2044 +0x508
+== APP - order-processor == created by net/http.(*Server).Serve in goroutine 1
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3290 +0x3f0
+== APP - order-processor == 2024/10/11 15:25:16 http: panic serving 127.0.0.1:53680: interface conversion: interface {} is map[string]interface {}, not main.Order_t
+== APP - order-processor == goroutine 12 [running]:
+== APP - order-processor == net/http.(*conn).serve.func1()
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:1903 +0xb0
+== APP - order-processor == panic({0x56a900?, 0x40000a71d0?})
+== APP - order-processor == 	/usr/lib/golang/src/runtime/panic.go:770 +0x124
+== APP - order-processor == main.eventHandler({0x40000b4460?, 0xc8?}, 0x61e0c2?)
+== APP - order-processor == 	/home/marcel/dapr-examples/quickstarts/pub_sub/go/sdk/order-processor/app.go:46 +0xf4
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.func1({0x6f7a80, 0x40000b4460}, 0x40000019e0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/topic.go:303 +0x3c0
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0xff6cad37bae8?, {0x6f7a80?, 0x40000b4460?}, 0x9dd7d168d?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/dapr/go-sdk/service/http.(*Server).AddTopicEventHandler.optionsHandler.func2({0x6f7a80?, 0x40000b4460?}, 0x61a1bb?)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/dapr/go-sdk@v1.11.0/service/http/service.go:105 +0x88
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x40000bc2d0?, {0x6f7a80?, 0x40000b4460?}, 0x4000036455?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).routeHTTP(0x4000112840, {0x6f7a80, 0x40000b4460}, 0x40000019e0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:459 +0x288
+== APP - order-processor == net/http.HandlerFunc.ServeHTTP(0x6f8820?, {0x6f7a80?, 0x40000b4460?}, 0xac7280?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2171 +0x38
+== APP - order-processor == github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0x4000112840, {0x6f7a80, 0x40000b4460}, 0x40000018c0)
+== APP - order-processor == 	/home/marcel/go/pkg/mod/github.com/go-chi/chi/v5@v5.1.0/mux.go:90 +0x280
+== APP - order-processor == net/http.serverHandler.ServeHTTP({0x6f61c8?}, {0x6f7a80?, 0x40000b4460?}, 0x6?)
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3142 +0xbc
+== APP - order-processor == net/http.(*conn).serve(0x40000a30e0, {0x6f87e8, 0x40001c3890})
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:2044 +0x508
+== APP - order-processor == created by net/http.(*Server).Serve in goroutine 1
+== APP - order-processor == 	/usr/lib/golang/src/net/http/server.go:3290 +0x3f0
+
+termination signal received: shutting down

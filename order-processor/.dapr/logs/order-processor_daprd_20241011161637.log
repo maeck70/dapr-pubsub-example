@@ -1,0 +1,63 @@
+Starting Dapr with id order-processor. HTTP Port: 39329. gRPC Port: 42739
+Updating metadata for cliPID: 84134
+Flag --dapr-http-max-request-size has been deprecated, use '--max-body-size 4Mi'
+Flag --dapr-http-read-buffer-size has been deprecated, use '--read-buffer-size 4Ki'
+time="2024-10-11T16:16:37.401497946-07:00" level=info msg="Starting Dapr Runtime -- version 1.14.4 -- commit 583960dc90120616124b60ad2b7820fc0b3edf44" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.401563751-07:00" level=info msg="Log level set to: info" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.401892873-07:00" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.security type=log ver=1.14.4
+time="2024-10-11T16:16:37.402440909-07:00" level=info msg="metric spec: {0x4000a3fabd <nil> <nil> []}" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.diagnostics type=log ver=1.14.4
+time="2024-10-11T16:16:37.402506214-07:00" level=info msg="Using default latency distribution buckets: [1 2 3 4 5 6 8 10 13 16 20 25 30 40 50 65 80 100 130 160 200 250 300 400 500 650 800 1000 2000 5000 10000 20000 50000 100000]" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.diagnostics type=log ver=1.14.4
+time="2024-10-11T16:16:37.402766031-07:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.diagnostics type=log ver=1.14.4
+time="2024-10-11T16:16:37.403888206-07:00" level=info msg="standalone mode configured" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.403961411-07:00" level=info msg="app id: order-processor" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.404073918-07:00" level=info msg="metrics server started on :33619/" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.404077919-07:00" level=info msg="Dapr trace sampler initialized: ParentBased{root:AlwaysOnSampler,remoteParentSampled:AlwaysOnSampler,remoteParentNotSampled:AlwaysOffSampler,localParentSampled:AlwaysOnSampler,localParentNotSampled:AlwaysOffSampler}" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.404887973-07:00" level=info msg="local service entry announced: order-processor -> 192.168.242.25:33583" app_id=order-processor component="nr (mdns/v1)" instance=marcel-arm64 scope=dapr.contrib type=log ver=1.14.4
+time="2024-10-11T16:16:37.404917475-07:00" level=info msg="Initialized name resolution to mdns" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.405019482-07:00" level=info msg="Loading components…" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.405704027-07:00" level=info msg="Waiting for all outstanding components to be processed…" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.409342971-07:00" level=info msg="Component loaded: orderpubsub (pubsub.redis/v1)" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.processor type=log ver=1.14.4
+time="2024-10-11T16:16:37.409438577-07:00" level=info msg="All outstanding components processed" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.409471279-07:00" level=info msg="Loading endpoints…" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.409729897-07:00" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.409799001-07:00" level=info msg="All outstanding http endpoints processed" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.409810302-07:00" level=info msg="Loading Declarative Subscriptions…" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.410106022-07:00" level=info msg="gRPC server listening on TCP address: :42739" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.grpc.api type=log ver=1.14.4
+time="2024-10-11T16:16:37.410126323-07:00" level=info msg="Enabled gRPC tracing middleware" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.grpc.api type=log ver=1.14.4
+time="2024-10-11T16:16:37.410134424-07:00" level=info msg="Enabled gRPC metrics middleware" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.grpc.api type=log ver=1.14.4
+time="2024-10-11T16:16:37.410337137-07:00" level=info msg="Registering workflow engine for gRPC endpoint: [::]:42739" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.grpc.api type=log ver=1.14.4
+time="2024-10-11T16:16:37.410408442-07:00" level=info msg="API gRPC server is running on port 42739" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.410439944-07:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:16:37.410488547-07:00" level=info msg="Enabled max body size HTTP middleware with size 4194304 bytes" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:16:37.410499448-07:00" level=info msg="Enabled tracing HTTP middleware" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:16:37.410506248-07:00" level=info msg="Enabled metrics HTTP middleware" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:16:37.410765966-07:00" level=info msg="HTTP server listening on TCP address: :39329" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.http type=log ver=1.14.4
+time="2024-10-11T16:16:37.41082167-07:00" level=info msg="HTTP server is running on port 39329" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.41083017-07:00" level=info msg="The request body size parameter is: 4194304 bytes" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.410848871-07:00" level=info msg="gRPC server listening on TCP address: :33583" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.grpc.internal type=log ver=1.14.4
+time="2024-10-11T16:16:37.410859272-07:00" level=info msg="Enabled gRPC tracing middleware" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.grpc.internal type=log ver=1.14.4
+time="2024-10-11T16:16:37.410865973-07:00" level=info msg="Enabled gRPC metrics middleware" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.grpc.internal type=log ver=1.14.4
+time="2024-10-11T16:16:37.410889374-07:00" level=info msg="Internal gRPC server is running on :33583" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:37.410966079-07:00" level=info msg="application protocol: http. waiting on port 6005.  This will block until the app is listening on that port." app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:38.118909112-07:00" level=info msg="application discovered on port 6005" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:38.120284704-07:00" level=info msg="Application configuration loaded" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:38.120337807-07:00" level=info msg="actors: state store is not configured - this is okay for clients but services with hosted actors will fail to initialize!" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:38.120401412-07:00" level=info msg="Configuring actors placement provider 'placement'. Configuration: 'placement:localhost:50005'" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.actor type=log ver=1.14.4
+time="2024-10-11T16:16:38.120427513-07:00" level=info msg="Configuring actor reminders provider 'default'. Configuration: ''" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.actor type=log ver=1.14.4
+time="2024-10-11T16:16:38.120464316-07:00" level=info msg="Actor runtime started. Idle timeout: 1h0m0s" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.actor type=log ver=1.14.4
+time="2024-10-11T16:16:38.120480017-07:00" level=info msg="Configuring workflow engine with actors backend" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:38.120486717-07:00" level=info msg="Registering component for dapr workflow engine..." app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:38.120503218-07:00" level=info msg="Initializing Dapr workflow component" app_id=order-processor component="dapr (workflow.dapr/v1)" instance=marcel-arm64 scope=dapr.contrib type=log ver=1.14.4
+time="2024-10-11T16:16:38.120515419-07:00" level=info msg="Workflow engine initialized." app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+time="2024-10-11T16:16:38.121155562-07:00" level=info msg="app is subscribed to the following topics: [[orders]] through pubsub=orderpubsub" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.processor.subscription type=log ver=1.14.4
+time="2024-10-11T16:16:38.122282537-07:00" level=info msg="dapr initialized. Status: Running. Init Elapsed 718ms" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime type=log ver=1.14.4
+Updating metadata for app command: go run .
+Updating metadata for appPID: 84161
+You're up and running! Dapr logs will appear here.
+
+time="2024-10-11T16:16:38.41457828-07:00" level=info msg="Placement tables updated, version: 0" app_id=order-processor instance=marcel-arm64 scope=dapr.runtime.actors.placement type=log ver=1.14.4
+
+termination signal received: shutting down
+time="2024-10-11T16:20:04.258897516-07:00" level=info msg="Received signal 'interrupt'; beginning shutdown" app_id=order-processor instance=marcel-arm64 scope=dapr.signals type=log ver=1.14.4
+Exited Dapr successfully
+Exited App successfully
