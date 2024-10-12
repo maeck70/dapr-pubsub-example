@@ -4,3 +4,6 @@ This DAPR example shows how to simply create a struct with data and publish it (
 
 Run this sample with `dapr run -f .`
 You will need to have all the dapr setup up as defined here [Dapr Getting Started](https://docs.dapr.io/getting-started/)
+
+This is the RabbitMQ variation. I will bind the exchange "orders" with routingkey "myorders" to the queue "dapr-orders".
+Enable DLQ's as needed. 
