@@ -11,10 +11,17 @@ import (
 	daprd "github.com/dapr/go-sdk/service/http"
 )
 
+const (
+	pubsubComponentName = "order-pubsub"
+	pubsubTopic         = "orders"
+	routingkey          = "myorders"
+)
+
 var sub = &common.Subscription{
-	PubsubName: "orderpubsub",
-	Topic:      "orders",
-	Route:      "/orders",
+	PubsubName: pubsubComponentName,
+	Topic:      pubsubTopic,
+	Route: "/checkout",
+	Metadata:   map[string]string{"routingKey": routingkey},
 }
 
 func main() {

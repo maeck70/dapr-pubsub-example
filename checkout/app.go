@@ -9,8 +9,9 @@ import (
 )
 
 const (
-	pubsubComponentName = "orderpubsub"
+	pubsubComponentName = "order-pubsub"
 	pubsubTopic         = "orders"
+	routingkey          = "myorders"
 )
 
 type Order_t struct {
@@ -42,6 +43,9 @@ func main() {
 			pubsubComponentName,
 			pubsubTopic,
 			order,
+			dapr.PublishEventWithMetadata(
+				map[string]string{"routingKey": routingkey},
+			),
 		)
 
 		if err != nil {
@@ -51,6 +55,6 @@ func main() {
 		// Show what we have published
 		fmt.Printf("Published data: %+v\n", order)
 
-		time.Sleep(time.Second)
+		time.Sleep(5000 * time.Microsecond)
 	}
 }
