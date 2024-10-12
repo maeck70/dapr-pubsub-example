@@ -43,22 +43,19 @@ type Order_t struct {
 }
 
 func eventHandler(ctx context.Context, e *common.TopicEvent) (retry bool, err error) {
-
-	fmt.Println(e.DataContentType)
-	// fmt.Printf("Raw Data: %v\n", e.RawData)
-
+	// Use Dapr to Unmarshal the data into the Order_t struct
 	var data Order_t
-
 	err = e.Struct(&data)
 	if err != nil {
 		fmt.Println("Error Struct data:", err)
 		return false, err
 	}
 
+	// Show what we have received
+	fmt.Printf("COntentType: %s\n", e.DataContentType)
 	fmt.Printf("Raw data: %s\n", e.RawData)
 	fmt.Printf("OrderId: %d\n", data.OrderId)
 	fmt.Printf("Descr: %s\n", data.Descr)
 
-	fmt.Println("Subscriber received:", e.Data)
 	return false, nil
 }

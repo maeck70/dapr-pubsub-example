@@ -29,11 +29,14 @@ func main() {
 	// Publish events using Dapr pubsub
 	for i := 1; i <= 10; i++ {
 
+		// Define the order into the Order_t struct
 		order := Order_t{
 			OrderId: i,
 			Descr:   "100 Led Bulbs",
 		}
 
+		// Publish the order to the pubsub component
+		// Simply send the Order_t struct to the PublishEvent method
 		err = client.PublishEvent(
 			context.Background(),
 			pubsubComponentName,
@@ -45,6 +48,7 @@ func main() {
 			panic(err)
 		}
 
+		// Show what we have published
 		fmt.Printf("Published data: %+v\n", order)
 
 		time.Sleep(time.Second)
